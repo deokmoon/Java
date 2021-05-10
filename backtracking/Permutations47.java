@@ -1,5 +1,9 @@
 package com.leetcode.backtracking;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Permutations47 {
     public List<List<Integer>> permuteUnique(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
