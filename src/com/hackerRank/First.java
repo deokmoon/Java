@@ -2,6 +2,7 @@ package com.hackerRank;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 class First implements Comparable<HashMap<Integer, Integer>> {
     /*
@@ -10,6 +11,8 @@ class First implements Comparable<HashMap<Integer, Integer>> {
      * The function is expected to return an INTEGER_ARRAY.
      * The function accepts INTEGER_ARRAY nums as parameter.
      */
+    public static HashMap<Integer, Integer> bitCountMap = new HashMap<>();
+
     public static List<Integer> cardinalitySort(List<Integer> nums) {
         // Write your code here
         int length = nums.size();
@@ -30,7 +33,7 @@ class First implements Comparable<HashMap<Integer, Integer>> {
     }
 
     public static void makeBitCountMap(List<Integer> nums, int length) {
-        HashMap<Integer, Integer> bitCountMap = new HashMap<>();
+
         for(int i = 0; i< length; i++) {
             if(!bitCountMap.containsKey(nums.get(i))) bitCountMap.put(nums.get(i), countRemainder(nums.get(i)));
         }
@@ -59,6 +62,11 @@ class First implements Comparable<HashMap<Integer, Integer>> {
 
     @Override
     public int compareTo(HashMap<Integer, Integer> o) {
+        for(Map.Entry<Integer, Integer> entry: bitCountMap.entrySet()) {
+
+        }
+
+
         return 0;
     }
 }

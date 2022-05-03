@@ -4,6 +4,5 @@
     <mapping directory="" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/com/leetcode" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/com/leetcode/array" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/src/com/leetcode/user" vcs="Git" />
   </component>
 </project>

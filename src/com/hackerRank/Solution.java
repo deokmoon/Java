@@ -1,16 +1,21 @@
 package com.hackerRank;
 
 import java.io.*;
+import java.util.Arrays;
 
 public class Solution {
     public static void main(String[] args) throws IOException, IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine());
+        while(n > 0) {
+            int[] inputInteger = Arrays.stream(br.readLine().split("\\s+")).mapToInt(Integer::parseInt).toArray();
 
-        String s = bufferedReader.readLine();
+            BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+            bw.write(Integer.toString(inputInteger[0] + inputInteger[1]) + "\n");
+            bw.flush();
+            bw.close();
 
-        long n = Long.parseLong(bufferedReader.readLine().trim());
-
-        long result = Result.repeatedString(s, n);
-        System.out.println(result);
+            n--;
+        }
     }
 }
